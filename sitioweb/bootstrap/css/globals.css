@@ -1,0 +1,116 @@
+/* =============================== GLOBALS =============================== */
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background: #F3F0E8;
+}
+section {
+    background-color: #0b0e13;
+    color: #FAFAFA;
+    padding-bottom: 50px;
+}
+
+/* SECCION BANNER
+https://gradients.app/es/color/12140e 
+*/
+section .banner {
+    background: 
+        linear-gradient(to bottom, rgba(0,0,0,0.6) 60%, rgba(0,0,0, 0.8) 100%), 
+        url('../../imagenes/leyenda-banner.jpg') center / cover no-repeat;
+    
+    width: 100%; 
+    min-height: 85vh;
+    position: relative;
+    padding-bottom: 20vh;
+}
+section .banner .title-banner h2 {
+    font-family: 'Cinzel', 'Georgia', serif;
+    letter-spacing: 12px;
+    color: #c8aa6e;
+    font-size: 5rem;
+}
+
+/* SECCION INTRO */
+section .container .intro {
+    justify-content: center;
+}
+
+/* ==========================================================================
+   SOLUCIÓN NAVBAR:
+   ========================================================================== */
+
+/* Hace que las opciones se desplieguen al pasar el mouse (En PC) */
+@media (min-width: 992px) {
+  .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Evita parpadeos o saltos de un píxel */
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+  }
+
+  /* Animación inicial suave para que el menú no caiga de golpe */
+  .navbar-nav .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+  }
+}
+
+/* Las listas desplegables (Dropdowns) también adoptan el efecto vidrio */
+.navbar-nav .dropdown-menu {
+    background-color: rgba(11, 14, 19, 0.9) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    
+    /* Un borde dorado muy sutil para iluminar las opciones estilo Runaterra */
+    border: 1px solid rgba(200, 170, 110, 0.25) !important; 
+}
+
+/* Blindaje estricto para que el Navbar no se mueva de la parte superior */
+header, nav.navbar {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  z-index: 9999 !important; /* Se superpone a cualquier banner o tarjeta */
+}
+
+/* ==========================================================================
+   ESTILO TRASLÚCIDO (GLASSMORPHISM ESTILO LOL)
+   ========================================================================== */
+/* Barra de navegación principal */
+.navbar-translucido {
+    /* Fondo gris grafito muy oscuro con 80% de opacidad (20% transparente) */
+    background-color: rgba(18, 22, 26, 0.8) !important;
+    
+    /* El truco de magia: Desenfoque de 12 píxeles a todo lo que pase por detrás */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); /* Soporte obligatorio para navegadores Safari/Apple */
+    
+    transition: background-color 0.3s ease;
+}
+
+
+/* Evita que las opciones internas del menú se clonen o distorsionen al pasar el mouse */
+.dropdown-item:hover {
+    background-color: rgba(200, 170, 110, 0.1) !important;
+    color: #ffffff !important;
+}
+
+/* --- FOOTER --- */
+footer {
+    background: #101c5f;
+    color: #FFFDF7;
+    text-align: center;
+    padding: 20px;
+}
+footer h3 {
+    font-size: 16px;
+    font-weight: normal;
+}
