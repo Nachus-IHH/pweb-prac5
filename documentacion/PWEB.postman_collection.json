@@ -1,0 +1,498 @@
+{
+  "info": {
+    "_postman_id": "7effe105-db25-4e65-83c2-828447e3c3cf",
+    "name": "PWEB",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51332667",
+    "_collection_link": "https://go.postman.co/collection/51332667-7effe105-db25-4e65-83c2-828447e3c3cf?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "AWS EC2 RDS",
+      "item": [
+        {
+          "name": "prac5",
+          "item": [
+            {
+              "name": "GET rptArticulosHTML FILTRADO",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://52.20.143.60/prog-web/prac5/sitioweb/inicio.php?op=rptarticulos&p=1&p_min=&p_max=15000&f_familia=Hardware&f_modelo=",
+                  "protocol": "http",
+                  "host": [
+                    "52",
+                    "20",
+                    "143",
+                    "60"
+                  ],
+                  "path": [
+                    "prog-web",
+                    "prac5",
+                    "sitioweb",
+                    "inicio.php"
+                  ],
+                  "query": [
+                    {
+                      "key": "op",
+                      "value": "rptarticulos"
+                    },
+                    {
+                      "key": "p",
+                      "value": "1"
+                    },
+                    {
+                      "key": "p_min",
+                      "value": ""
+                    },
+                    {
+                      "key": "p_max",
+                      "value": "15000"
+                    },
+                    {
+                      "key": "f_familia",
+                      "value": "Hardware"
+                    },
+                    {
+                      "key": "f_modelo",
+                      "value": ""
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET acceso ADMIN",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "txtUsuario",
+                      "value": "pperez",
+                      "type": "text"
+                    },
+                    {
+                      "key": "txtContrasena",
+                      "value": "itp2026",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "https://52.20.143.60/prog-web/prac5/sitioweb/inicio.php?op=acceso",
+                  "protocol": "https",
+                  "host": [
+                    "52",
+                    "20",
+                    "143",
+                    "60"
+                  ],
+                  "path": [
+                    "prog-web",
+                    "prac5",
+                    "sitioweb",
+                    "inicio.php"
+                  ],
+                  "query": [
+                    {
+                      "key": "op",
+                      "value": "acceso"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET acceso VENTAS",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "txtUsuario",
+                      "value": "lruiz",
+                      "type": "text"
+                    },
+                    {
+                      "key": "txtContrasena",
+                      "value": "itp2026",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "https://52.20.143.60/prog-web/prac5/sitioweb/inicio.php?op=acceso",
+                  "protocol": "https",
+                  "host": [
+                    "52",
+                    "20",
+                    "143",
+                    "60"
+                  ],
+                  "path": [
+                    "prog-web",
+                    "prac5",
+                    "sitioweb",
+                    "inicio.php"
+                  ],
+                  "query": [
+                    {
+                      "key": "op",
+                      "value": "acceso"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET rptArticuloHTML",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://52.20.143.60/prog-web/prac4/sitioweb/rptArticulosHTML.php",
+                  "protocol": "https",
+                  "host": [
+                    "52",
+                    "20",
+                    "143",
+                    "60"
+                  ],
+                  "path": [
+                    "prog-web",
+                    "prac4",
+                    "sitioweb",
+                    "rptArticulosHTML.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET rptArticuloJSON",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://52.20.143.60/prog-web/prac4/sitioweb/rptArticulosJSON.php",
+                  "protocol": "https",
+                  "host": [
+                    "52",
+                    "20",
+                    "143",
+                    "60"
+                  ],
+                  "path": [
+                    "prog-web",
+                    "prac4",
+                    "sitioweb",
+                    "rptArticulosJSON.php"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "prac4",
+          "item": [
+            {
+              "name": "acceso DATOS_VALIDOS",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://52.20.143.60/prog-web/prac4/sitioweb/acceso.php?txtUsuario=pperez&txtContrasena=itp2026",
+                  "protocol": "https",
+                  "host": [
+                    "52",
+                    "20",
+                    "143",
+                    "60"
+                  ],
+                  "path": [
+                    "prog-web",
+                    "prac4",
+                    "sitioweb",
+                    "acceso.php"
+                  ],
+                  "query": [
+                    {
+                      "key": "txtUsuario",
+                      "value": "pperez"
+                    },
+                    {
+                      "key": "txtContrasena",
+                      "value": "itp2026"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "acceso DATOS_INVALIDOS",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://52.20.143.60/prog-web/prac4/sitioweb/acceso.php?txtUsuario=pperez&txtContrasena=soypperez",
+                  "protocol": "https",
+                  "host": [
+                    "52",
+                    "20",
+                    "143",
+                    "60"
+                  ],
+                  "path": [
+                    "prog-web",
+                    "prac4",
+                    "sitioweb",
+                    "acceso.php"
+                  ],
+                  "query": [
+                    {
+                      "key": "txtUsuario",
+                      "value": "pperez"
+                    },
+                    {
+                      "key": "txtContrasena",
+                      "value": "soypperez"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "consumirservicio.php",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "txtUsuario",
+                      "value": "nachus",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "http://52.20.143.60/prog-web/prac4/sitioweb/consumirservicio.php",
+                  "protocol": "http",
+                  "host": [
+                    "52",
+                    "20",
+                    "143",
+                    "60"
+                  ],
+                  "path": [
+                    "prog-web",
+                    "prac4",
+                    "sitioweb",
+                    "consumirservicio.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "rptArticulosHTML (HTML)",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://52.20.143.60/prog-web/prac4/sitioweb/rptArticulosHTML.php",
+                  "protocol": "https",
+                  "host": [
+                    "52",
+                    "20",
+                    "143",
+                    "60"
+                  ],
+                  "path": [
+                    "prog-web",
+                    "prac4",
+                    "sitioweb",
+                    "rptArticulosHTML.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "rptArticulosJSON (JSON)",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://52.20.143.60/prog-web/prac4/sitioweb/rptArticulosJSON.php",
+                  "protocol": "https",
+                  "host": [
+                    "52",
+                    "20",
+                    "143",
+                    "60"
+                  ],
+                  "path": [
+                    "prog-web",
+                    "prac4",
+                    "sitioweb",
+                    "rptArticulosJSON.php"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "prac3",
+          "item": [
+            {
+              "name": "zempoala.php",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://52.20.143.60/prog-web/prac3/zempoala.php",
+                  "protocol": "https",
+                  "host": [
+                    "52",
+                    "20",
+                    "143",
+                    "60"
+                  ],
+                  "path": [
+                    "prog-web",
+                    "prac3",
+                    "zempoala.php"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "prac2",
+          "item": [
+            {
+              "name": "index.php",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://52.20.143.60/prog-web/prac2/prac2/index.php",
+                  "protocol": "https",
+                  "host": [
+                    "52",
+                    "20",
+                    "143",
+                    "60"
+                  ],
+                  "path": [
+                    "prog-web",
+                    "prac2",
+                    "prac2",
+                    "index.php"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "prac1",
+          "item": [
+            {
+              "name": "grid.php",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://52.20.143.60/prog-web/prac1/prac1/grid.php",
+                  "protocol": "https",
+                  "host": [
+                    "52",
+                    "20",
+                    "143",
+                    "60"
+                  ],
+                  "path": [
+                    "prog-web",
+                    "prac1",
+                    "prac1",
+                    "grid.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "iniciouno.php",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://52.20.143.60/prog-web/prac1/prac1/iniciouno.php",
+                  "protocol": "https",
+                  "host": [
+                    "52",
+                    "20",
+                    "143",
+                    "60"
+                  ],
+                  "path": [
+                    "prog-web",
+                    "prac1",
+                    "prac1",
+                    "iniciouno.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "iniciodos.php",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://52.20.143.60/prog-web/prac1/prac1/iniciodos.php",
+                  "protocol": "https",
+                  "host": [
+                    "52",
+                    "20",
+                    "143",
+                    "60"
+                  ],
+                  "path": [
+                    "prog-web",
+                    "prac1",
+                    "prac1",
+                    "iniciodos.php"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
